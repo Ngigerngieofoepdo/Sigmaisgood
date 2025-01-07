@@ -1,5 +1,3 @@
-
-
 if workspace:FindFirstChild("Baseplate") == nil then
 local a = Instance.new("Part")
 a.Name = "Baseplate"
