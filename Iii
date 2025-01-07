@@ -15,7 +15,7 @@ wait(0.1)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Baseplate"].CFrame * CFrame.new(0,10,0)
 
-fireclickdetector(workspace.Lobby["el gato"].ClickDetector)
+fireclickdetector(workspace.Lobby.el gato.ClickDetector)
 
 wait(0.5)
 
@@ -27,7 +27,7 @@ game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
 
 wait(1)
 
-fireclickdetector(workspace.Lobby.["Replica"].ClickDetector)
+fireclickdetector(workspace.Lobby.Replica.ClickDetector)
 
 wait(0.1)
 
