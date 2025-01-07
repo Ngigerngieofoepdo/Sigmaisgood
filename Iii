@@ -1,0 +1,55 @@
+if workspace:FindFirstChild("Baseplate") == nil then
+local a = Instance.new("Part")
+a.Name = "Baseplate"
+a.Anchored = true
+a.CanCollide = true
+a.Transparency = 0
+a.Position = Vector3.new(-6453, -1234, -4531) -- not actual coords
+a.Size = Vector3.new(1000, 10, 1000)
+a.Parent = workspace
+end
+
+wait(0.1)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Baseplate"].CFrame * CFrame.new(0,10,0)
+
+fireclickdetector(workspace.Lobby["el gato"].ClickDetector)
+
+wait(0.5)
+
+game:GetService("ReplicatedStorage").Events.Cat:FireServer()
+
+wait(1)
+
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
+
+wait(1)
+
+fireclickdetector(workspace.Lobby["Replica"].ClickDetector)
+
+wait(0.1)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-910.162292, 329.955811, -8.030071))
+
+wait(0.4)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Baseplate"].CFrame * CFrame.new(0,10,0)
+
+wait(0.3)
+
+game:GetService("ReplicatedStorage").Duplicate:FireServer(true)
+
+wait(0.1)
+
+for i = 1, 1150 do -- not actual number
+for i, v in pairs(workspace:GetChildren()) do
+                if v.Name:match(game.Players.LocalPlayer.Name) and v:FindFirstChild("HumanoidRootPart") then
+game.ReplicatedStorage.b:FireServer(v:WaitForChild("HumanoidRootPart"),true)
+                end
+end
+task.wait(0)
+end
+
+game.Players.LocalPlayer:Kick("Serverhopping...")
+
+game:GetService("TeleportService"):Teleport(6403373529)
