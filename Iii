@@ -1,4 +1,4 @@
-Slap farm source original:
+
 
 if workspace:FindFirstChild("Baseplate") == nil then
 local a = Instance.new("Part")
@@ -27,7 +27,7 @@ game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
 
 wait(1)
 
-fireclickdetector(workspace.Lobby.Replica.ClickDetector)
+fireclickdetector(workspace.Lobby.["Replica"].ClickDetector)
 
 wait(0.1)
 
